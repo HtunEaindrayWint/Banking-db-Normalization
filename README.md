@@ -39,7 +39,11 @@ Run `04_good_design_workflow_test.sql`. Update the customer address once, and ob
 ---
 
 Tech Stack & Concepts Covered
+
 Database Engine: MySQL
+
 Architecture: Database Normalization (1NF, 2NF, 3NF)
+
 Data Integrity: Foreign Key Constraints & Cascading Updates (`ON UPDATE CASCADE`)
+
 Abstractions: Database Views (`CREATE VIEW`)
