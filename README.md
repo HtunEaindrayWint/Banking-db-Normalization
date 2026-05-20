@@ -24,16 +24,16 @@ Customer details are isolated into a single `customers` table, serving as the **
 
 How to Run the Demonstration
 
-Step 1: Setup Bad Design
+Step 1: Setup Bad Design : 
 Run `01_bad_design_setup.sql` to initialize the problematic database and populate it with duplicated sample data.
    
-Step 2: Test Inconsistency
+Step 2: Test Inconsistency: 
 Run `02_bad_design_workflow_test.sql`. This simulates a customer updating their address in their account profile only. The `UNION ALL` query will expose the resulting data discrepancy.
 
-Step 3: Setup Good Design 
+Step 3: Setup Good Design : 
 Run `03_good_design_setup.sql` to deploy the normalized, centralized structure utilizing relational integrity.
 
-Step 4: Test Single Source of Truth 
+Step 4: Test Single Source of Truth : 
 Run `04_good_design_workflow_test.sql`. Update the customer address once, and observe how `JOIN` queries and `VIEW` structures instantly reflect the correct, unified data across all banking profiles.
 
 ---
